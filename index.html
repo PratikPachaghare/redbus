@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>redBus</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        body{
+            background-color: rgb(233, 121, 121);
+
+        }
+        .nav{margin-top: 0%;
+            width: 100vw;
+            height: 120px;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            background-color: aliceblue;
+        }
+        .nav .left img{
+            width: 100px;
+            height: 50px;
+            
+        }
+        .nav .left {
+            margin-right: 200px;
+            width: 30%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            justify-content: space-around;
+        }
+        .nav .right {
+            display: flex;
+        }
+        .nav .left .bus-tikets{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: aliceblue;
+            text-decoration: white;
+            width: 160px;
+            height: 95px;
+            border-radius: 10px;
+            background-color: red;
+            justify-content: center;
+            align-items: center;
+        }
+        .nav .left .bus-tikets:hover{
+            background-color: rgb(255, 90, 90);
+        }
+        .nav .left .bus-tikets img{
+            margin: 0;
+            color: aliceblue;
+            text-decoration: white;
+            width: 55px;
+            height: 23px;
+           
+            justify-content: center;
+            align-items: center;
+        }
+        .nav .left .bus-tikets p{
+            margin:5px;
+            
+        }
+
+        .nav .left .train-tikets{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: rgb(17, 16, 16);
+            text-decoration: white;
+            width: 140px;
+            height: 85px;
+            border-radius: 10px;
+            background-color: rgb(244, 244, 244);
+            justify-content: center;
+            align-items: center;
+        }
+        .nav .left .train-tikets img{
+            margin: 0;
+            color: aliceblue;
+            text-decoration: white;
+            width: 55px;
+            height: 25px;
+            
+            justify-content: center;
+            align-items: center;
+        }
+        .nav .left .train-tikets p{
+            margin:5px;
+            
+        }
+
+        .nav .right button{
+            width: 130px;
+            height: 40px;
+            border: none;
+            font-size: 15px;
+            background-color: transparent;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+        .nav .right button:hover{
+            
+            border: none;
+            font-size: 15px;
+            background-color: rgb(182, 180, 180);
+
+        }
+
+        /* .from-to{
+            margin: 0 auto;
+            background-image: url(asset/bus-background.webp);
+            width: 100vw;
+            height: 600px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        .from-to p{
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            margin: auto;
+            font-size: 50px;
+            color: white;
+        }
+        .from-to .location{
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            margin: auto;
+            display: flex;
+            justify-content: space-evenly;
+            width: 1500px;
+            height: 150px;
+            border-radius: 30px;
+            background-color: white;
+        }
+        .from-to .box{
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            width: 380px;
+            height: 100%;
+            border-left: 1px solid rgb(57, 56, 56);
+        }
+        .from-to .box p{
+            font-size: 30px;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+        .from-to .from,.to,.date{
+            display: flex;
+            font-size: 30px;
+            text-decoration:rgb(185, 185, 185) ;
+            color: rgb(198, 197, 197);
+            justify-content: left;
+            align-items: center;
+        }
+        .from-to input{
+            border: none;
+            
+        } */
+
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="nav">
+            <div class="left flex">
+                <img src="asset/redbuslogo.png" alt="logo"> |
+                <div class="bus-tikets">
+                    <img src="asset/redbuslogo.png" alt="">
+                    <p>Bus Tikets</p>
+                </div>
+                <div class="train-tikets">
+                    <img src="asset/trainlogo-removebg-preview.png" alt="">
+                    <p>Train Tikets</p>
+                </div>
+            </div>
+            <div class="right flex">
+                <button class="help"><i class="fa-solid fa-headphones"></i> Help</button>
+                <button class="Accout"><i class="fa-regular fa-user"></i> Account</button>
+            </div>
+        </div>
+        <!-- <div class="from-to">
+            <p>India's No. 1 Online Bus Ticket Booking Site</p>
+            <div class="location">
+                <div class=" box from">
+                    <div class="logo"><i class="fa-solid fa-bus"></i></div>
+                    <div class="input">
+                        <p style="color: rgb(188, 188, 188);">from</p>
+                        <input type="text" class="input">
+                    </div>
+                </div>
+                <div class="to">
+                    <div class="box logo"><i class="fa-solid fa-bus"></i></div>
+                    <div class="input">
+                        <p style="color: rgb(188, 188, 188)">to</p>
+                        <input type="text" class="input">
+                    </div>
+                </div>
+                <div class="box date">
+                    <div class="logo"><i class="fa-solid fa-calendar-days"></i></div>
+                    <div class="input">
+                        <p style="color: rgb(188, 188, 188);">Date</p>
+                        <input type="text" class="input">
+                    </div>
+                </div>
+                <div class=" box serch">SERACH BUS</div>
+            </div>
+        </div> -->
+    </div>
+</body>
+</html>
